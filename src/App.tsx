@@ -1,11 +1,11 @@
 import { Person } from "./Components/Objects";
 import { Country } from "./Components/interfaces";
-
+//sdsd
 function App() {
   return (
     <div className={"App"}>
       <div className={"card"}>sdsd</div>
-      <p>sdasdasdas asdasdasd</p>
+      <p>sdasdasdas sssasdassssdasd</p>
       <Person
         name="big bag"
         email="ssss@sadas.com"
