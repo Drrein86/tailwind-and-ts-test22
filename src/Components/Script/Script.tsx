@@ -8,7 +8,7 @@ function Script() {
 
   const handleClick = (e: any) => {
     console.log(e.target);
-    if (e.target.name == "next" && questionNumber <= Questions.length - 1)
+    if (e.target.name == "next" && questionNumber < Questions.length - 1)
       setQuestionNumber((prev) => prev + 1);
     if (e.target.name == "prev" && questionNumber > 0)
       setQuestionNumber((prev) => prev - 1);
@@ -26,7 +26,7 @@ function Script() {
       <div>
         <button name="next" onClick={handleClick}>
           {" "}
-          {questionNumber <= Questions.length - 1 ? "המשך" : "סיום"}{" "}
+          {questionNumber < Questions.length - 1 ? "המשך" : "סיום"}{" "}
         </button>
         {questionNumber != 0 && (
           <button name="prev" onClick={handleClick}>
